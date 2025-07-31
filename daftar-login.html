@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar / Login - Arcadia Rent</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+     <header>
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="logo.png" alt="Arcadia Rent Logo" class="logo-img">
+                <h1 class="site-title">Arcadia Rent </h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Sewa <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="konsol.html">Konsol</a>
+                            <a href="permainan.html">Permainan</a>
+                            <a href="vr.html">VR & Aksesoris</a>
+                        </div>
+                    </li>
+                    <li><a href="tentang-kami.html" >Tentang Kami</a></li> <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+                    <li><a href="daftar-login.html" class="btn primary-btn nav-btn">Daftar / Login</a></li> <li class="cart-icon-nav">
+                        <a href="index.html"><i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="container">
+                <h1 class="auth-title"><i class="fas fa-user-circle"></i> Bergabunglah dengan Arcadia Rent!</h1>
+                <p class="auth-subtitle">Dapatkan pengalaman sewa yang lebih mudah dan cepat dengan membuat akun.</p>
+
+                <div class="auth-tabs">
+                    <button class="tab-button active" onclick="openTab(event, 'register')">Daftar</button>
+                    <button class="tab-button" onclick="openTab(event, 'login')">Login</button>
+                </div>
+
+                <div id="register" class="tab-content active">
+                    <h2>Buat Akun Baru</h2>
+                    <form id="register-form">
+                        <div class="form-group">
+                            <label for="reg-name">Nama Lengkap:</label>
+                            <input type="text" id="reg-name" name="name" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-email">Email:</label>
+                            <input type="email" id="reg-email" name="email" placeholder="contoh@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-phone">Nomor Telepon:</label>
+                            <input type="tel" id="reg-phone" name="phone" placeholder="081234567890" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-password">Password:</label>
+                            <input type="password" id="reg-password" name="password" placeholder="Min. 6 karakter" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-confirm-password">Konfirmasi Password:</label>
+                            <input type="password" id="reg-confirm-password" name="confirm_password" placeholder="Ulangi password Anda" required>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms-agree" name="terms" required>
+                            <label for="terms-agree">Saya setuju dengan <a href="#" class="link-in-text">Syarat & Ketentuan</a></label>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Daftar Sekarang</button>
+                    </form>
+                </div>
+
+                <div id="login" class="tab-content">
+                    <h2>Masuk ke Akun Anda</h2>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="login-email">Email:</label>
+                            <input type="email" id="login-email" name="email" placeholder="contoh@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password:</label>
+                            <input type="password" id="login-password" name="password" placeholder="Masukkan password Anda" required>
+                        </div>
+                        <div class="form-group remember-me">
+                            <input type="checkbox" id="remember-me" name="remember">
+                            <label for="remember-me">Ingat Saya</label>
+                            <a href="#" class="forgot-password-link">Lupa Password?</a>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Login</button>
+                    </form>
+                    <p class="switch-auth-text">Belum punya akun? <a href="#" onclick="showRegisterTab()">Daftar di sini</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <footer>
+         <div class="social-links">
+                    <a href="https://web.facebook.com/people/Arcadia-Rent/pfbid02fEtW1tQJ9UyFXMJ2SgB6ZEtLjk9Af6xNdwuC36LkWnTqp2Wnqt2i8g4aEkECR6tTl/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/arcadia_rent/" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://web.whatsapp.com/send?phone=6285179632935&text=Halo Kak, saya ingin menyewa PlayStation di Arcadia Rent." target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        <div class="container">
+            <div class="footer-maps">
+                <h3>Lokasi Kami</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.305001099688!2d106.82196621476884!3d-6.220808395507563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4142f1f1d1f%3A0x7b2f1e2a0b3e1d1e!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1678901234567!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p>© 2025 Arcadia Rent. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // JavaScript untuk tab Daftar/Login
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Fungsi untuk menunjukkan tab Daftar dari link "Daftar di sini"
+        function showRegisterTab() {
+            openTab(event, 'register');
+            document.querySelector('.auth-tabs .tab-button:nth-child(1)').click(); // Klik tombol Daftar
+        }
+
+        // Tampilkan tab daftar secara default saat halaman dimuat
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector('.auth-tabs .tab-button').click();
+        });
+
+        // Simulasi submit form
+        document.getElementById('register-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Pendaftaran berhasil! (Fungsi ini hanya simulasi)');
+            this.reset();
+            openTab(event, 'login'); // Pindah ke tab login setelah daftar
+            document.querySelector('.auth-tabs .tab-button:nth-child(2)').click(); // Klik tombol Login
+        });
+
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Login berhasil! (Fungsi ini hanya simulasi)');
+            this.reset();
+            // Di sini Anda akan mengarahkan pengguna ke halaman dashboard atau beranda
+            // window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

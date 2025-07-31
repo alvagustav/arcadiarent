@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permainan - Arcadia Rent </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="logo.png" alt="Arcadia Rent Logo" class="logo-img">
+                <h1 class="site-title">Arcadia Rent </h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="active">Sewa <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="konsol.html">Konsol</a>
+                            <a href="permainan.html" class="active">Permainan</a>
+                            <a href="vr.html">VR & Aksesoris</a>
+                        </div>
+                    </li>
+                    <li><a href="tentang-kami.html">Tentang Kami</a></li> <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+                    <li><a href="daftar-login.html" class="btn primary-btn nav-btn">Daftar / Login</a></li> <li class="cart-icon-nav">
+                        <a href="index.html"><i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+       <section id="games" class="product-section">
+    <div class="container">
+        <h2><i class="fas fa-gamepad"></i> Permainan</h2>
+        <div class="product-grid" id="game-list">
+            </div>
+    </div>
+</section>
+    </main>
+
+    <footer>
+    <p>© 2025 Arcadia Rent. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - Arcadia Rent</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="logo.png" alt="Arcadia Rent Logo" class="logo-img">
+                <h1 class="site-title">Arcadia Rent </h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Sewa <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="konsol.html">Konsol</a>
+                            <a href="permainan.html">Permainan</a>
+                            <a href="vr.html">VR & Aksesoris</a>
+                        </div>
+                    </li>
+                    <li><a href="tentang-kami.html" >Tentang Kami</a></li> 
+                    <li><a href="hubungi-kami.html" class="active">Hubungi Kami</a></li>
+                    <li><a href="daftar-login.html" class="btn primary-btn nav-btn">Daftar / Login</a></li> <li class="cart-icon-nav">
+                        <a href="index.html"><i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-page-section">
+            <div class="container">
+                <h1 class="contact-page-title"></i>📞 Hubungi Kami</h1>
+                <p class="contact-page-subtitle">Punya pertanyaan atau butuh bantuan? Jangan ragu untuk menghubungi tim kami!</p>
+
+                <div class="contact-container-grid">
+                    <div class="contact-form-card">
+                        <h2>Kirim Pesan Kepada Kami</h2>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="contact-name">Nama Lengkap:</label>
+                                <input type="text" id="contact-name" name="name" placeholder="Masukkan Nama Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email Anda:</label>
+                                <input type="email" id="contact-email" name="email" placeholder="Masukkan Emai Anda" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-phone">Nomor Telepon (opsional):</label>
+                                <input type="tel" id="contact-phone" name="phone" placeholder="Masukkan Nomor Telepon Anda (opsional)">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Pesan Anda:</label>
+                                <textarea id="contact-message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-method">Metode Kontak Pilihan:</label>
+                                <select id="contact-method" name="contactMethod">
+                                    <option value="email">Email</option>
+                                    <option value="phone">Telepon</option>
+                                    <option value="whatsapp">WhatsApp</option>
+                                </select>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Daftar untuk newsletter kami</label>
+                            </div>
+                            <button type="submit" class="btn primary-btn">Kirim Pesan</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h2>Informasi Kontak Kami</h2>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p> Jl. Raya Halim Perdanakusuma No.1, RT.1/RW.9, Halim Perdanakusuma, Kec. Makasar, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13610</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <p> +62 851-7963-2935</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <p> 0857-1928-8607</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p> info@arcadiaplaystation.com</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <p>Jam Operasional: Senin-Minggu, 09.00 - 22.00 WIB</p>
+                        </div>
+
+                        <h3>Lokasi Kami (Google Maps)</h3>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.305001099688!2d106.82196621476884!3d-6.220808395507563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4142f1f1d1f%3A0x7b2f1e2a0b3e1d1e!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1678901234567!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <a href="https://maps.app.goo.gl/8DALBVAEa9qqdmoKA" target="_blank" class="map-overlay-button">Lihat peta lebih besar</a>
+                        </div>
+                        <p class="map-attribution">Temukan lokasi kami dengan mudah di peta interaktif di atas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <footer>
+         <div class="social-links">
+                    <a href="https://web.facebook.com/people/Arcadia-Rent/pfbid02fEtW1tQJ9UyFXMJ2SgB6ZEtLjk9Af6xNdwuC36LkWnTqp2Wnqt2i8g4aEkECR6tTl/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/arcadia_rent/" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://web.whatsapp.com/send?phone=6285179632935&text=Halo Kak, saya ingin menyewa PlayStation di Arcadia Rent." target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        <div class="container">
+            <div class="footer-maps">
+                <h3>Lokasi Kami</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.305001099688!2d106.82196621476884!3d-6.220808395507563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4142f1f1d1f%3A0x7b2f1e2a0b3e1d1e!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1678901234567!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p>© 2025 Arcadia Rent. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Pesan Anda telah terkirim! (Fungsi ini hanya simulasi)');
+            // Di sini Anda akan menambahkan kode untuk mengirim data form ke server
+            this.reset(); // Reset form setelah submit
+        });
+    </script>
+</body>
+</html>

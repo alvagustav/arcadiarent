@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcadia Rent - Sewa Playstation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="logo.png" alt="Arcadia Rent Logo" class="logo-img">
+                <h1 class="site-title">Arcadia Rent </h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="#" >Sewa <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="konsol.html" >Konsol</a>
+                            <a href="permainan.html">Permainan</a>
+                            <a href="vr.html">VR & Aksesoris</a>
+                        </div>
+                    </li>
+                    <li><a href="tentang-kami.html">Tentang Kami</a></li> <li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+                    <li><a href="daftar-login.html" class="btn primary-btn nav-btn">Daftar / Login</a></li> <li class="cart-icon-nav">
+                        <a href="#cart"><i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h1>Sewa PlayStation Terbaik untuk Pengalaman Gaming Tak Terlupakan!</h1>
+                <p>Jelajahi dunia hiburan dan teknologi tanpa batas bersama Arcadia Rent. Kami hadir untuk memenuhi kebutuhan rental PlayStation, gadget, dan berbagai perlengkapan multimedia lainnya, siap memberikan pengalaman terbaik untuk Anda. Cukup sewa, langsung main!</p>
+                <button id="exploreBtn" class="btn primary-btn">Mulai Sewa</button>
+            </div>
+        </section>
+
+        <section id="consoles" class="product-section">
+            <div class="container">
+                <h2>🎮 Koleksi Konsol</h2>
+                <div class="product-grid" id="console-list">
+                    </div>
+            </div>
+        </section>
+
+        <section id="games" class="product-section bg-light">
+            <div class="container">
+                <h2>🕹️ Permainan Terbaik</h2>
+                <div class="product-grid" id="game-list">
+                    </div>
+            </div>
+        </section>
+
+        <section id="vr-gear" class="product-section">
+            <div class="container">
+                <h2>🥽 Perangkat VR & Aksesoris</h2>
+                <div class="product-grid" id="vr-accessories-list">
+                    </div>
+            </div>
+        </section>
+
+        <section id="cart" class="cart-section bg-light">
+            <div class="container">
+                <h2>🛒 Keranjang Belanja Anda</h2>
+                <div id="cart-items">
+                    <p id="empty-cart-message">Keranjang Anda kosong.</p>
+                </div>
+                <div class="cart-summary">
+                    <div>
+                        <h3>Total: <span id="cart-total">Rp 0</span></h3>
+                        <button id="checkout-btn" class="btn primary-btn" disabled>Lanjutkan ke Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="checkout-section" class="checkout-section">
+            <div class="container">
+                <h2>💸 Proses Checkout</h2>                 
+                <form id="checkout-form">
+                    <h3>Informasi Pelanggan</h3>
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap:</label>
+                        <input type="text" id="nama" name="nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telepon">Nomor Telepon:</label>
+                        <input type="tel" id="telepon" name="telepon" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="alamat">Alamat Pengiriman:</label>
+                        <textarea id="alamat" name="alamat" rows="4" required></textarea>
+                    </div>
+
+                    <h3>Durasi Sewa</h3>
+                    <div class="form-group">
+                        <label for="start-date">Tanggal Mulai Sewa:</label>
+                        <input type="date" id="start-date" name="startDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="end-date">Tanggal Selesai Sewa:</label>
+                        <input type="date" id="end-date" name="endDate" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" id="back-to-cart-btn" class="btn secondary-btn">Kembali ke Keranjang</button>
+                        <button type="submit" class="btn primary-btn">Konfirmasi Pesanan</button>
+                    </div>
+                </form>
+
+                <div id="checkout-confirmation" class="hidden">
+                    <h3>Terima Kasih, Pesanan Anda Telah Dikonfirmasi! 🎉</h3>
+                    <p>Detail pesanan akan dikirimkan ke email Anda.</p>
+                    <p>Kami akan segera menghubungi Anda untuk mengatur pengiriman produk sewaan.</p>
+                    <button id="continue-shopping-btn" class="btn primary-btn">Lanjutkan Belanja</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+         <div class="social-links">
+                    <a href="https://web.facebook.com/people/Arcadia-Rent/pfbid02fEtW1tQJ9UyFXMJ2SgB6ZEtLjk9Af6xNdwuC36LkWnTqp2Wnqt2i8g4aEkECR6tTl/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/arcadia_rent/" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://web.whatsapp.com/send?phone=6285179632935&text=Halo Kak, saya ingin menyewa PlayStation di Arcadia Rent." target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        <div class="container">
+            <div class="footer-maps">
+                <h3>Lokasi Kami</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.305001099688!2d106.82196621476884!3d-6.220808395507563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4142f1f1d1f%3A0x7b2f1e2a0b3e1d1e!2sMonumen%20Nasional!5e0!3m2!1sid!2sid!4v1678901234567!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p>© 2025 Arcadia Rent. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
